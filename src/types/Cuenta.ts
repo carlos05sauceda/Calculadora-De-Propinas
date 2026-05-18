@@ -1,10 +1,6 @@
-export type cuenta = number | "";
-
-export interface Cuentas {
-    TotalCuenta: cuenta;
-    Porcentaje: cuenta;
-    Resultado: number;
+export interface ITotalCuenta {
+  subtotal: number;
+  porcentajePropina: number;
+  propina: number;
+  totalConPropina: number;
 }
-
-
-export type CuentaCliente = keyof Omit<Cuentas, "Resultado" >;
